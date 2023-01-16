@@ -1,5 +1,5 @@
 import {Cell, Popup} from "@test/nutui-react-taro";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import {Picker} from "@test/nutui-react-taro"
 
 export default () => {
@@ -22,21 +22,6 @@ export default () => {
     ],
   ]
   const [showBasic, setShowBasic] = useState(false);
-
-  const a = async () => {
-    let promise = new Promise((resolve, reject) => {
-      setTimeout(() => resolve("done!"), 1000)
-    });
-
-    let result = await promise;
-
-    console.log('yyyyy',result);
-  }
-  useEffect(() => {
-    console.log('promise',typeof Promise)
-    a()
-  })
-
 
   return (
     <>
