@@ -22,7 +22,7 @@ const config = {
   },
   framework: 'react',
   sass:{
-    data: `@import "@test/nutui-react-taro/dist/styles/variables.scss";`
+    data: `@import "@nutui/nutui-react-taro/dist/styles/variables.scss";`
   },
   compiler: 'webpack5',
   cache: {
@@ -59,6 +59,9 @@ const config = {
     publicPath: '/',
     staticDirectory: 'static',
     esnextModules: ['@nutui/nutui-react-taro'],
+    webpackChain: (chain) => {
+      console.log(chain.resolve.alias)
+    },
     postcss: {
       autoprefixer: {
         enable: true,

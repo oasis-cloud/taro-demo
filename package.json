@@ -35,6 +35,8 @@
   ],
   "author": "",
   "dependencies": {
+    "@nutui/nutui-react-taro": "^1.4.5",
+    "@nutui/nutui-taro": "^4.0.0",
     "@tarojs/components": "3.5.7",
     "@tarojs/helper": "3.5.7",
     "@tarojs/plugin-framework-react": "3.5.7",
