@@ -1,11 +1,11 @@
 import React from "react";
-import {Button} from "@nutui/nutui-react-taro"
+import {Button, Icon} from "@nutui/nutui-react-taro"
 
 export default () => {
 
   return <>
-
-    <Button >xxxx</Button>
+    <Icon name='message'/>
+    {/*<Button >xxxx</Button>*/}
 
     </>
 };
